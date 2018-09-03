@@ -17,10 +17,18 @@ a, a:hover, a:focus { color: #9b59b6; text-decoration: none; transition: all .3s
 h1, h2 {
 	margin-top: 10px;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 38px;
-    font-weight: 300;
+	font-size: 46px;
+    font-weight: 700;
     color: #555;
     line-height: 50px;
+}
+
+.bright{
+	color: #fff !important;
+}
+
+.darker{
+	color: #444 !important;
 }
 
 h3 {
@@ -171,7 +179,7 @@ img { max-width: 100%; }
 	backface-visibility: hidden;
 	visibility: visible;
 }
-.navbar.navbar-no-bg { background: #444; background: rgba(0, 0, 0, 0); }
+.navbar.navbar-no-bg { background: rgba(35, 13, 40,0); }
 .navbar-dark .navbar-nav { font-size: 15px; color: #fff; font-weight: 600; }
 .navbar-dark .navbar-nav .nav-link { color: #fff; color: rgba(255, 255, 255, 0.8); border: 0; }
 .navbar-dark .navbar-nav .nav-link:hover { color: #fff; }
@@ -179,7 +187,7 @@ img { max-width: 100%; }
 .navbar-expand-md .navbar-nav .nav-link { padding-left: 1rem; padding-right: 1rem; }
 
 .navbar-brand {
-	width: 220px;
+	width: 215px;
 	background: url(../ico/logo-putih-mini-crop.png) left center no-repeat;
 	border: 0;
 	text-indent: -99999px;
@@ -217,7 +225,10 @@ img { max-width: 100%; }
 	margin: 30px 0 10px 0;
 }
 
-.top-content .description p { opacity: 1; }
+.top-content .description p { 
+	opacity: 1; 
+	
+}
 
 .top-content .top-big-link {
 	margin-top: 45px;
@@ -226,6 +237,7 @@ img { max-width: 100%; }
 .top-content .textdesc {
 	z-index: 5;
 	position: relative;
+	padding: 30px;
 }
 
 .carImg{
@@ -303,13 +315,11 @@ img { max-width: 100%; }
 .seminarTTL h1{
 	color: rgb(35,13,40);
 	font-size: 50px;
-	font-weight: 500;
 	position: relative;
 	padding-top: 30px;
 	right: 0%;
 	bottom: 0%;
 	z-index: 2;
-	
 }
 
 .carousel-inner{
@@ -394,6 +404,12 @@ img { max-width: 100%; }
 .buton-box{
 	position: relative;
 	height: 50px;
+	align-items: center;
+}
+
+.buton-guide{
+	position: relative !important;
+	left: 0px;
 }
 
 .buton-detail{
@@ -489,11 +505,6 @@ img { max-width: 100%; }
 	.compcarro-inner .active{
 		filter: opacity(100%);
 		filter: drop-shadow(8px 8px 10px grey);
-	}
-
-	.compcarro-inner .active +.comp-item,
-	.compcarro-inner .active + .comp-item + .comp-item{
-		filter: grayscale(80%);
 	}
 
 	.compcarro-inner .active + .comp-item + .comp-item + .comp-item,
@@ -926,20 +937,10 @@ img { max-width: 100%; }
 	display: none;
 }
 
-
-@media screen and (max-width: 768px){
-	.yt-video{
-		width: 400px;
-		height: 200px;
-	}
+.yt-video{
+	width: 853px;
+	height: 480px;
 }
-@media screen and (min-width: 768px){
-	.yt-video{
-		width: 853px;
-		height: 480px;
-	}
-}
-
 
 /***** FAQ *****/
 .FAQ-container{
