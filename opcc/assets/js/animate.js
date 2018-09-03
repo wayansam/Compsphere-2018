@@ -99,11 +99,11 @@ $('.loadport').click(function(){
 });
 
 
-$('.detail-comp').click(function(){
+$('.comp-item').click(function(){
     $('#myNav').css("width","100%");
     $('body').css('overflow', 'hidden');
-    $('.comp-item').each(function(){
-        if ($(this).hasClass('active')){
+    
+        
             //console.log("in");
             if ($(this).hasClass('compSoftDev')){
                 
@@ -121,9 +121,16 @@ $('.detail-comp').click(function(){
                 
                 $('.detail-comp5').css("display","block");
             }
-        }
-    });
+        
+    
 });
+
+// $('.compSoftDev').click(function(){
+//     console.log('wew');
+//     $('#myNav').css("width","100%");
+//     $('body').css('overflow', 'hidden');
+//     $('.detail-comp1').css("display","block");
+// });
 
 $('.closebtn').click(function(){
     $('#myNav').css("width","0%");
