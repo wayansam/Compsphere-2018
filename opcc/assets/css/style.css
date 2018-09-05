@@ -688,14 +688,14 @@ img { max-width: 100%; }
 }
 
 /* Full-width input fields */
-.registration input[type=text], .registration label {
+.registration input[type=text], .registration label,.registration input[type=email] {
 	width: 100%;
 	margin: 5px 0;
 	display: inline-block;
 	box-sizing: border-box;
 }
 
-.registration input[type=text]{
+.registration input[type=text],.registration input[type=email]{
 	border: 1px solid #ccc;
 	padding: 5px 20px;
 }
@@ -944,7 +944,7 @@ img { max-width: 100%; }
 
 /***** FAQ *****/
 .FAQ-container{
-	background-color: rgba(155, 89, 182, 0.9);
+	background-color: rgba(155, 89, 182, 1);
 	color: rgb(35, 13, 40);
 }
 
@@ -958,6 +958,11 @@ img { max-width: 100%; }
 
 .card-header{
 	padding: 7px;
+}
+
+.card .btn{
+	white-space: normal;
+	text-align: left;
 }
 
 #FAQ1 .card-header,

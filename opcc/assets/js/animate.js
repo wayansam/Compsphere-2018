@@ -162,14 +162,39 @@ function regis(numb,code){
     if (numb==1){
         $('.members').css("display","none");
         $('.title').text("Register");
+        $('.inputTeam').css("display","none");
+        $('.teamNames').val("*");
+        
+        $('.form2').each(function(){
+            $(this).val("*");
+        });
+        $('.form3').each(function(){
+            $(this).val("*");
+        });
+        $('.form4').each(function(){
+            $(this).val("*");
+        });
+        $('.form5').each(function(){
+            $(this).val("*");
+        });
     }else if (numb==3){
         $('.members').css("display","block");
         $('.members2').css("display","none");
         $('.title').text("Team Leader");
+        $('.inputTeam').css("display","block");
+        $('.teamNames').val("");
+        $('.form4').each(function(){
+            $(this).val("*");
+        });
+        $('.form5').each(function(){
+            $(this).val("*");
+        });
     }else if (numb==5){
         $('.members').css("display","block");
         $('.members2').css("display","block");
         $('.title').text("Team Leader");
+        $('.inputTeam').css("display","block");
+        $('.teamNames').val("");
     }
     
     if(code==1){
@@ -182,6 +207,12 @@ function regis(numb,code){
         $('.compIDs').val("digdes");
     }else if(code==5){
         $('.compIDs').val("rank1");
+    }
+
+    if(code==1){
+        $('.infoSoftDev').css("display","block");
+    }else{
+        $('.infoSoftDev').css("display","none");
     }
 }
 

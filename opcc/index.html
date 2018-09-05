@@ -646,7 +646,7 @@
 				<!-- The Modal -->
 				<div id="id01" class="modal regis-panel">
 				  	<!-- Modal Content -->
-					<form class="modal-content animate" action="action_page.php" novalidate>
+					<form class="modal-content animate"  id="test-form" name="submit-to-google-sheet"> <!-- action="action_page.php"-->
 						<!--<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>-->
 						<div class="imgcontainer">
 						  <img src="assets/img/logo/LOGO2.png" alt="Avatar" class="avatar">
@@ -660,7 +660,17 @@
 										<label for="name"><b>Name</b></label>
 									</div>
 									<div class="col-lg-9">
-										<input class="input-fill"type="text" placeholder="Enter Your Name" name="name1" required>
+										<input class="input-fill"type="text" placeholder="Enter Your Name" name="name_1" required>
+									</div>
+								</div>
+								<div class="inputTeam">
+									<div class="row">
+										<div class="col-lg-3">
+											<label for="compID"><b>Team Name</b></label>
+										</div>
+										<div class="col-lg-9">
+											<input type="text" placeholder="Name of Your Team" name="team_name" class="teamNames" required>
+										</div>
 									</div>
 								</div>
 								<div class="row">
@@ -668,7 +678,7 @@
 										<label for="asal"><b>School</b></label>
 									</div>
 									<div class="col-lg-9">
-										<input class="input-fill"type="text" placeholder="Enter Your School Name" name="school1" required>
+										<input class="input-fill"type="text" placeholder="Enter Your School Name" name="school" required>
 									</div>
 								</div>
 								<div class="row">
@@ -676,7 +686,7 @@
 										<label for="email"><b>Email</b></label>
 									</div>
 									<div class="col-lg-9">
-										<input class="input-fill"type="text" placeholder="Enter Your Email" name="email1" required>
+										<input class="input-fill"type="email" placeholder="Enter Your Email" name="email" required>
 									</div>
 								</div>
 								<div class="row">
@@ -684,7 +694,7 @@
 										<label for="stdid"><b>Student ID</b></label>
 									</div>
 									<div class="col-lg-9">
-										<input class="input-fill"type="text" placeholder="Enter Your Student ID" name="stdid1" required>
+										<input class="input-fill"type="text" placeholder="Enter Your Student ID" name="std_id_1" required>
 									</div>
 								</div>
 								<div class="row">
@@ -692,7 +702,7 @@
 										<label for="photo"><b>Photo</b></label>
 									</div>
 									<div class="col-lg-9">
-										<input class="input-fill"type="text" placeholder="Enter Gdrive link of Your Photo" name="photo1" required>
+										<input class="input-fill"type="text" placeholder="Enter Gdrive link of Your Photo" name="photo_1" required>
 									</div>
 								</div>
 								<div class="row inputComp">
@@ -706,13 +716,14 @@
 							</div>
 							<div class="members">
 								<h2>Members</h2>
+								<p class="infoSoftDev">*Please fill '-' for the rest of form if you are not in a 3 peoples group</p>
 								<div class="regis2 box-regis">
 									<div class="row">
 										<div class="col-lg-3">
 											<label for="name"><b>Name</b></label>
 										</div>
 										<div class="col-lg-9">
-											<input class="input-fill"type="text" placeholder="Enter Your Name" name="name2" required>
+											<input class="input-fill form2"type="text" placeholder="Enter Your Name" name="name_2" required>
 										</div>
 									</div>
 									<div class="row">
@@ -720,7 +731,7 @@
 											<label for="stdid"><b>Student ID</b></label>
 										</div>
 										<div class="col-lg-9">
-											<input class="input-fill"type="text" placeholder="Enter Your Student ID" name="stdid2" required>
+											<input class="input-fill form2"type="text" placeholder="Enter Your Student ID" name="std_id_2" required>
 										</div>
 									</div>
 									<div class="row">
@@ -728,7 +739,7 @@
 											<label for="photo"><b>Photo</b></label>
 										</div>
 										<div class="col-lg-9">
-												<input class="input-fill"type="text" placeholder="Enter Gdrive link of Your Photo" name="photo2" required>
+												<input class="input-fill form2"type="text" placeholder="Enter Gdrive link of Your Photo" name="photo_2" required>
 										</div>
 									</div>
 								</div>
@@ -738,7 +749,7 @@
 											<label for="name"><b>Name</b></label>
 										</div>
 										<div class="col-lg-9">
-											<input class="input-fill"type="text" placeholder="Enter Your Name" name="name3" required>
+											<input class="input-fill form3"type="text" placeholder="Enter Your Name" name="name_3" required>
 										</div>
 									</div>
 									<div class="row">
@@ -746,7 +757,7 @@
 											<label for="stdid"><b>Student ID</b></label>
 										</div>
 										<div class="col-lg-9">
-											<input class="input-fill"type="text" placeholder="Enter Your Student ID" name="stdid3" required>
+											<input class="input-fill form3"type="text" placeholder="Enter Your Student ID" name="std_id_3" required>
 										</div>
 									</div>
 									<div class="row">
@@ -754,7 +765,7 @@
 											<label for="photo"><b>Photo</b></label>
 										</div>
 										<div class="col-lg-9">
-												<input class="input-fill"type="text" placeholder="Enter Gdrive link of Your Photo" name="photo3" required>
+												<input class="input-fill form3"type="text" placeholder="Enter Gdrive link of Your Photo" name="photo_3" required>
 										</div>
 									</div>
 								</div>
@@ -765,7 +776,7 @@
 												<label for="name"><b>Name</b></label>
 											</div>
 											<div class="col-lg-9">
-												<input class="input-fill"type="text" placeholder="Enter Your Name" name="name4" required>
+												<input class="input-fill form4"type="text" placeholder="Enter Your Name" name="name_4" required>
 											</div>
 										</div>
 										<div class="row">
@@ -773,7 +784,7 @@
 												<label for="stdid"><b>Student ID</b></label>
 											</div>
 											<div class="col-lg-9">
-												<input class="input-fill"type="text" placeholder="Enter Your Student ID" name="stdid4" required>
+												<input class="input-fill form4"type="text" placeholder="Enter Your Student ID" name="std_id_4" required>
 											</div>
 										</div>
 										<div class="row">
@@ -781,7 +792,7 @@
 												<label for="photo"><b>Photo</b></label>
 											</div>
 											<div class="col-lg-9">
-													<input class="input-fill"type="text" placeholder="Enter Gdrive link of Your Photo" name="photo4" required>
+													<input class="input-fill form4"type="text" placeholder="Enter Gdrive link of Your Photo" name="photo_4" required>
 											</div>
 										</div>
 									</div>
@@ -791,7 +802,7 @@
 												<label for="name"><b>Name</b></label>
 											</div>
 											<div class="col-lg-9">
-												<input class="input-fill"type="text" placeholder="Enter Your Name" name="name5" required>
+												<input class="input-fill form5"type="text" placeholder="Enter Your Name" name="name_5" required>
 											</div>
 										</div>
 										<div class="row">
@@ -799,7 +810,7 @@
 												<label for="stdid"><b>Student ID</b></label>
 											</div>
 											<div class="col-lg-9">
-												<input class="input-fill"type="text" placeholder="Enter Your Student ID" name="stdid5" required>
+												<input class="input-fill form5"type="text" placeholder="Enter Your Student ID" name="std_id_5" required>
 											</div>
 										</div>
 										<div class="row">
@@ -807,16 +818,16 @@
 												<label for="photo"><b>Photo</b></label>
 											</div>
 											<div class="col-lg-9">
-													<input class="input-fill"type="text" placeholder="Enter Gdrive link of Your Photo" name="photo5" required>
+													<input class="input-fill form5"type="text" placeholder="Enter Gdrive link of Your Photo" name="photo_5" required>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-
+							
 							<div class="row">
 								<div class="col-lg-6">
-									<button type="submit">Register</button>		
+									<button type="submit" id="submit-form">Register</button>		
 								</div>
 								<div class="col-lg-6">
 									<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
@@ -825,6 +836,7 @@
 							<label>
 								<input type="checkbox" checked="checked" name="remember"> Email me the confirmation
 							</label>
+							
 						</div>
 					
 					</form>
@@ -1878,68 +1890,97 @@
 		<script src="assets/js/scripts.js"></script>
 		<script src="assets/js/animate.js"></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>
+
+		<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+		<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+		<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
 					<script type="text/javascript">
-			$(document).ready(function(){
+			// $(document).ready(function(){
 					
-				$('form').submit(function(event){
-					var name2,stdid2,photo2,name3,stdid3,photo3,name4,stdid4,photo4,name5,stdid5,photo5;
-					if($('input[name=name2]').val()){
-						var name2 = $('input[name=name2]').val();
-						var stdid2 = $('input[name=stdid2]').val();
-						var photo2 = $('input[name=photo2]').val();
-					}
-					if($('input[name=name3]').val()){
-						var name3 = $('input[name=name3]').val();
-						var stdid3 = $('input[name=stdid3]').val();
-						var photo3 = $('input[name=photo3]').val();
-					}
-					if($('input[name=name4]').val()){
-						var name4 = $('input[name=name4]').val();
-						var stdid4 = $('input[name=stdid4]').val();
-						var photo4 = $('input[name=photo4]').val();
-					}
-					if($('input[name=name5]').val()){
-						var name5 = $('input[name=name5]').val();
-						var stdid5 = $('input[name=stdid5]').val();
-						var photo5 = $('input[name=photo5]').val();
-					}
-					console.log($('input[name=name1]').val());
-					var formData = {
-						'name1' : $('input[name=name1]').val(),
-						'school1' : $('input[name=school1]').val(),
-						'email1' : $('input[name=email1]').val(),
-						'stdid1' : $('input[name=stdid1]').val(),
-						'photo1' : $('input[name=photo1]').val(),
-						'cat' : $('input[name=CompetitionID]').val(),
-						'name2' : name2,
-						'stdid2' : stdid2,
-						'photo2' : photo2,
-						'name3' : name3,
-						'stdid3' : stdid3,
-						'photo3' : photo3,
-						'name4' : name4,
-						'stdid4' : stdid4,
-						'photo4' : photo4,
-						'name5' : name5,
-						'stdid5' : stdid5,
-						'photo5' : photo5
-					};
-					$.ajax({
-						type : 'POST',
-						url : 'action_page.php',
-						data: formData,
-						dataType: 'text',
-						//encode: true,
-						success:function(data){
-							window.alert("Successfully Registered!");
-						},
-					}).done(function(data){
-						console.log(data);
+			// 	$('form').submit(function(event){
+			// 		var name2,stdid2,photo2,name3,stdid3,photo3,name4,stdid4,photo4,name5,stdid5,photo5;
+			// 		if($('input[name=name2]').val()){
+			// 			var name2 = $('input[name=name2]').val();
+			// 			var stdid2 = $('input[name=stdid2]').val();
+			// 			var photo2 = $('input[name=photo2]').val();
+			// 		}
+			// 		if($('input[name=name3]').val()){
+			// 			var name3 = $('input[name=name3]').val();
+			// 			var stdid3 = $('input[name=stdid3]').val();
+			// 			var photo3 = $('input[name=photo3]').val();
+			// 		}
+			// 		if($('input[name=name4]').val()){
+			// 			var name4 = $('input[name=name4]').val();
+			// 			var stdid4 = $('input[name=stdid4]').val();
+			// 			var photo4 = $('input[name=photo4]').val();
+			// 		}
+			// 		if($('input[name=name5]').val()){
+			// 			var name5 = $('input[name=name5]').val();
+			// 			var stdid5 = $('input[name=stdid5]').val();
+			// 			var photo5 = $('input[name=photo5]').val();
+			// 		}
+			// 		console.log($('input[name=name1]').val());
+			// 		var formData = {
+			// 			'name1' : $('input[name=name1]').val(),
+			// 			'school1' : $('input[name=school1]').val(),
+			// 			'email1' : $('input[name=email1]').val(),
+			// 			'stdid1' : $('input[name=stdid1]').val(),
+			// 			'photo1' : $('input[name=photo1]').val(),
+			// 			'cat' : $('input[name=CompetitionID]').val(),
+			// 			'name2' : name2,
+			// 			'stdid2' : stdid2,
+			// 			'photo2' : photo2,
+			// 			'name3' : name3,
+			// 			'stdid3' : stdid3,
+			// 			'photo3' : photo3,
+			// 			'name4' : name4,
+			// 			'stdid4' : stdid4,
+			// 			'photo4' : photo4,
+			// 			'name5' : name5,
+			// 			'stdid5' : stdid5,
+			// 			'photo5' : photo5
+			// 		};
+			// 		$.ajax({
+			// 			type : 'POST',
+			// 			url : 'action_page.php',
+			// 			data: formData,
+			// 			dataType: 'text',
+			// 			//encode: true,
+			// 			success:function(data){
+			// 				window.alert("Successfully Registered!");
+			// 			},
+			// 		}).done(function(data){
+			// 			console.log(data);
 						
-					});
-					event.preventDefault();
-				});
-			});
+			// 		});
+			// 		event.preventDefault();
+			// 	});
+			// });
+
+			// var $form = $('form#test-form'),
+    	// url = 'https://script.google.com/macros/s/AKfycbx-f9pVjxwt1kxQvy2ZeJoviqqs0AdLb5Js6kHcGPcMLweT8wg/exec'
+			
+			// $('#submit-form').on('click', function(e) {
+			//   e.preventDefault();
+			//   var jqxhr = $.ajax({
+			//     url: url,
+			//     method: "GET",
+			//     dataType: "json",
+			//     data: $form.serializeObject()
+			//   }).success(
+			//     // do something
+			//   );
+			// })
+
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbx-f9pVjxwt1kxQvy2ZeJoviqqs0AdLb5Js6kHcGPcMLweT8wg/exec'
+  		const form = document.forms['submit-to-google-sheet']
+				
+  		form.addEventListener('submit', e => {
+  		  e.preventDefault()
+  		  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  		    .then(response => console.log('Success!', response))
+  		    .catch(error => console.error('Error!', error.message))
+  		})
 		</script>
 
   </body>
