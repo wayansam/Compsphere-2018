@@ -163,19 +163,19 @@ function regis(numb,code){
         $('.members').css("display","none");
         $('.title').text("Register");
         $('.inputTeam').css("display","none");
-        $('.teamNames').val("*");
+        $('.teamNames').val("-");
         
         $('.form2').each(function(){
-            $(this).val("*");
+            $(this).val("-");
         });
         $('.form3').each(function(){
-            $(this).val("*");
+            $(this).val("-");
         });
         $('.form4').each(function(){
-            $(this).val("*");
+            $(this).val("-");
         });
         $('.form5').each(function(){
-            $(this).val("*");
+            $(this).val("-");
         });
     }else if (numb==3){
         $('.members').css("display","block");
@@ -184,10 +184,10 @@ function regis(numb,code){
         $('.inputTeam').css("display","block");
         $('.teamNames').val("");
         $('.form4').each(function(){
-            $(this).val("*");
+            $(this).val("-");
         });
         $('.form5').each(function(){
-            $(this).val("*");
+            $(this).val("-");
         });
     }else if (numb==5){
         $('.members').css("display","block");

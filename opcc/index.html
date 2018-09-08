@@ -702,7 +702,7 @@
 										<label for="photo"><b>Photo</b></label>
 									</div>
 									<div class="col-lg-9">
-										<input class="input-fill"type="text" placeholder="Enter Gdrive link of Your Photo" name="photo_1" required>
+										<input class="input-fill"type="file" placeholder="Enter Gdrive link of Your Photo" name="photo_1" required>
 									</div>
 								</div>
 								<div class="row inputComp">
@@ -846,9 +846,9 @@
 		
 		<!-- FAQ -->
     <div class="FAQ-container section-container">
-        	<div class="container faq-cont">
-        		<div class="row">
-        			<div class="col testimonials section-description wow fadeIn">
+      <div class="container faq-cont">
+        <div class="row">
+        	<div class="col testimonials section-description wow fadeIn">
 						<h1 class="bright">FAQ</h1>
 					</div>
 				</div>
@@ -1666,7 +1666,7 @@
 					  </div>
 					</div>
 				</div>
-        	</div>
+      </div>
     </div>
 		       
     <!-- Galery -->
@@ -1978,7 +1978,7 @@
   		form.addEventListener('submit', e => {
   		  e.preventDefault()
   		  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  		    .then(response => console.log('Success!', response))
+  		    .then(response => alert('Your data has been saved successfully. Please wait for email confirmation!', response))
   		    .catch(error => console.error('Error!', error.message))
   		})
 		</script>
