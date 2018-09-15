@@ -165,6 +165,49 @@ img { max-width: 100%; }
 	box-shadow: none;
 }
 
+
+/***** Preloader *****/
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 #ffffff;
+}
+
+.sk-spinner-pulse {
+  width: 60px;
+  height: 60px;
+  background-color: #49254f ;
+  border-radius: 100%;
+  -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
+          animation: sk-pulseScaleOut 1s infinite ease-in-out; }
+
+@-webkit-keyframes sk-pulseScaleOut {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+@keyframes sk-pulseScaleOut {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+
 /***** Divider *****/
 .divider-1 span {
 	display: inline-block;
@@ -172,25 +215,32 @@ img { max-width: 100%; }
 	border-bottom: 1px dashed #ccc;
 }
 
+
+/* Extra Things */
+body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{color: #444;}
+
+
 /***** Top menu *****/
 .navbar {
-	background: #444;
+	background: rgba(0, 0, 0, 0) !important; 
 	-o-transition: all .6s; -moz-transition: all .6s; -webkit-transition: all .6s; -ms-transition: all .6s; transition: all .6s;
 	backface-visibility: hidden;
 	visibility: visible;
 }
-.navbar.navbar-no-bg { background: rgba(35, 13, 40,0); }
+.navbar.navbar-no-bg { background: rgba(0, 0, 0, 0); }
 .navbar-dark .navbar-nav { font-size: 15px; color: #fff; font-weight: 600; }
-.navbar-dark .navbar-nav .nav-link { color: #fff; color: rgba(255, 255, 255, 0.8); border: 0; }
+.navbar-dark .navbar-nav .nav-link {  color: rgba(255, 255, 255, 0.8); border: 0; }
 .navbar-dark .navbar-nav .nav-link:hover { color: #fff; }
 .navbar-dark .navbar-nav .nav-link:focus { color: #fff; outline: 0; }
 .navbar-expand-md .navbar-nav .nav-link { padding-left: 1rem; padding-right: 1rem; }
 
+
 .navbar-brand {
-	width: 215px;
+	width: 220px;
 	background: url(../ico/logo-putih-mini-crop.png) left center no-repeat;
 	border: 0;
 	text-indent: -99999px;
+	
 }
 
 .navbar.scrolled {
@@ -199,7 +249,7 @@ img { max-width: 100%; }
 }
 
 .navbar.active{
-	color:            #F8F8F8;
+	color: #F8F8F8;
     background-color: #4f81bd;
 }
 
@@ -237,7 +287,6 @@ img { max-width: 100%; }
 .top-content .textdesc {
 	z-index: 5;
 	position: relative;
-	padding: 30px;
 }
 
 .carImg{
@@ -1520,3 +1569,51 @@ footer {
 			opacity: 1;
 		}
 	}
+	
+.sponsor-box{ display: table;text-align: center;width:100%}
+.sponsorship-open{font-size:30px;vertical-align: middle;display: table-cell;margin-left:20px;font-weight: bold;}
+
+/*Return to Top */
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(52,8,61);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+	z-index:50;
+	
+	box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.4);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	
+	display: table;
+	text-align: center;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+	vertical-align: middle;display: table-cell;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+/* Extra Things */
+body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{color: #444;}

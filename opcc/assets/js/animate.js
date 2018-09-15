@@ -220,3 +220,4 @@ function showFaq(numb){
     $('.faq-body').css("display","none");
     $('.faq-cont'+numb).css("display","block");
 }
+

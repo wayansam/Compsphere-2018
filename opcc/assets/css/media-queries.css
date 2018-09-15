@@ -84,6 +84,10 @@
 	.footer-right { padding-top: 10px; text-align: center; }
 	.footer-bottom { padding-top: 20px; }
 	
+	#skipbutton{
+		height: 50px !important;
+		width: 50px !important;
+	}
 }
 
 @media (max-width: 415px) {
@@ -97,6 +101,17 @@
 	}
 	h1, h2 { font-size: 32px; }
 
+	.description i{
+		font-size: 18px !important;
+	}
+
+	.description{
+		width: inherit !important;
+	}
+	#skipbutton{
+		height: 40px !important;
+		width: 40px !important;
+	}
 }
 
 
