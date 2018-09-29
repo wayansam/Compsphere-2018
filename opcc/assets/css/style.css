@@ -10,6 +10,21 @@ body {
 	width: 100%;
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #9b59b6; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #d3aee2;
+}
+
 strong { font-weight: 600; }
 
 a, a:hover, a:focus { color: #9b59b6; text-decoration: none; transition: all .3s; }
@@ -431,6 +446,12 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
 }
 
 /***** Competition *****/
+.text-muted{
+	color: #000000!important;
+	font-size: 4em !important
+}
+
+
 @import "bourbon";
 *, *:before, *:after {
     box-sizing: border-box;
